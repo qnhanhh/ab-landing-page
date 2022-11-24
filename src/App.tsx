@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Banner from "./components/banner";
+import GradeFilter from "./components/grade-filter";
+import HotContent from "./components/hot-content";
+import { RecoilRoot } from "recoil";
+import Popup from "./components/popup";
+import * as dataA from "./data/dataA";
+import * as dataB from "./data/dataB";
+import HotContentB from "./components/hot-content-b";
+import GradeFilterB from "./components/grade-filter-b";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RecoilRoot>
+        {/* <Banner data={dataA.bannerData} />
+        <HotContent content={dataA.contentData} />
+        <GradeFilter header={dataA.gradeHeader} />
+        <Popup /> */}
+
+        <Banner data={dataB.bannerData} />
+        <HotContentB content={dataB.contentData} />
+        <GradeFilterB header={dataB.gradeHeader} />
+        <Popup />
+      </RecoilRoot>
     </div>
   );
 }
