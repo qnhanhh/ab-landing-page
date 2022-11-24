@@ -6,7 +6,7 @@ export const ContentContainer = styled.div`
 `;
 
 export const ContentHeader = styled.div`
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
@@ -24,7 +24,7 @@ export const ContentSpan = styled.div`
     font-size: 15px;
     line-height: 20px;
     letter-spacing: -0.02em;
-    color: #1f1f1f;
+    color: var(--light-black);
   }
 `;
 
@@ -43,7 +43,7 @@ export const ContentBody = styled.div`
       font-weight: 500;
       font-size: 12px;
       line-height: 16px;
-      color: #000;
+      color: var(--black);
     }
   }
 `;

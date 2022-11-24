@@ -1,23 +1,32 @@
 import { ContentType } from "../../data/dataB";
 import subjectImg from "../../assets/subject-img";
-import { VideoIframe, VideoImg, VideoTagList, VideoTitle } from "./styles";
+import { VideoImg, VideoTagList, VideoTitle } from "./styles";
+import YouTube, { YouTubeProps } from "react-youtube";
 
 const Video = ({ content }: { content: ContentType }) => {
-  const { title, url, tags, id, subtitle } = content;
+  const { title, videoId, tags, id, subtitle } = content;
+
+  const opts: YouTubeProps["opts"] = {
+    width: "330",
+    height: "180",
+  };
+
+  const style: YouTubeProps["style"] = {
+    textAlign:'center'
+  };
+
   return (
     <>
       {subtitle && <VideoTitle>{subtitle}</VideoTitle>}
-      {id?(
-        <VideoImg src={subjectImg[id-1]} alt={title} />
-      ):(
-        <VideoIframe
-          width="330"
-          src={url}
+      {id ? (
+        <VideoImg src={subjectImg[id - 1]} alt={title} />
+      ) : (
+        <YouTube
+          opts={opts}
+          style={style}
+          videoId={videoId}
           title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></VideoIframe>
+        ></YouTube>
       )}
       <VideoTitle>{title}</VideoTitle>
       <VideoTagList>

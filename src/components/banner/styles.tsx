@@ -27,5 +27,5 @@ export const BannerSubtitle = styled.p`
   font-size: 12px;
   line-height: 17px;
   letter-spacing: -0.02em;
-  color: #747474;
+  color: var(--dark-grey);
 `;

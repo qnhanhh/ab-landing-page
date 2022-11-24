@@ -11,6 +11,6 @@ export const ItemContainer = styled.div`
     font-size: 17px;
     line-height: 24px;
     letter-spacing: -0.01em;
-    color: #1f1f1f;
+    color: var(--light-black);
   }
 `;

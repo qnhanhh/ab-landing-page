@@ -6,17 +6,13 @@ export const VideoTitle = styled.p`
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.02em;
-  color: #000;
+  color: var(--black);
 `;
 
 export const VideoImg = styled.img`
   display: block;
   margin: auto;
   width: 360px;
-`;
-export const VideoIframe = styled.iframe`
-  display: block;
-  margin: auto;
 `;
 
 export const VideoTagList = styled.ul`
@@ -30,10 +26,10 @@ export const VideoTagList = styled.ul`
 
   & > li {
     padding: 2px 10px;
-    background-color: #747474;
+    background-color: var(--dark-grey);
     border-radius: 4px;
     font-size: 10px;
     line-height: 16px;
-    color: #fff;
+    color: var(--white);
   }
 `;

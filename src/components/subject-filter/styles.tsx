@@ -15,6 +15,6 @@ export const SubjectContainer = styled.div<Props>`
     font-size: 15px;
     line-height: 20px;
     letter-spacing: -0.02em;
-    color: #1f1f1f;
+    color: var(--light-black);
   }
 `;

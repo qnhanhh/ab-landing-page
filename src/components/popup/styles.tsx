@@ -19,7 +19,7 @@ export const PopupModal = styled.div`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #fff;
+  background-color: var(--white);
   line-height: 28px;
   color: #101828;
 `;
@@ -41,7 +41,7 @@ export const PopupButton = styled.a`
   text-decoration: none;
   padding: 9px;
   font-weight: 18px;
-  color: #fff;
-  background-color: #ff7629;
+  color: var(--white);
+  background-color: var(--orange);
   border-radius: 10px;
 `;

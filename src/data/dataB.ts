@@ -14,13 +14,13 @@ export type ContentType = {
     id?: number,
     title: string,
     subtitle?: string,
-    url?: string,
+    videoId?: string,
     tags?: string[]
 }
 
 export const contentData: ContentType = {
     title: 'Mở đoạn NLXH tạo ấn tượng khó phai',
-    url: 'https://www.youtube.com/embed/oFJNQjnZkvY',
+    videoId: 'oFJNQjnZkvY',
     tags: ['Lớp 12', 'Ngữ Văn']
 }
 

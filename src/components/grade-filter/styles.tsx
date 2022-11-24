@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const GradeContainer = styled.div`
-  background-color: #fff;
+  background-color: var(--white);
   padding: 13px;
 `;
 
@@ -10,8 +10,8 @@ export const GradeHeader = styled.p`
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.02em;
-  color: #ff5500;
+  color: var(--orange);
   text-align: center;
   padding-bottom: 15px;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid var(--light-grey);
 `;
