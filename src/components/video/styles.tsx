@@ -12,7 +12,7 @@ export const VideoTitle = styled.p`
 export const VideoImg = styled.img`
   display: block;
   margin: auto;
-  width: 360px;
+  width: 330px;
 `;
 
 export const VideoTagList = styled.ul`

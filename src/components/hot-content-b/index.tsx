@@ -3,20 +3,23 @@ import { ReactComponent as RightVector } from "../../assets/right_vector.svg";
 import { ReactComponent as PremiumIcon } from "../../assets/premium.svg";
 import { ContentType } from "../../data/dataB";
 import Video from "../video";
+import ClickHandler from "../click-handler";
 
 const HotContentB = ({ content }: { content: ContentType }) => {
   return (
-    <ContentContainer>
-      <ContentHeader>
-        <ContentSpan>
-          <PremiumIcon />
-          <span>Nội dung hot nhất</span>
-        </ContentSpan>
-        <RightVector />
-      </ContentHeader>
+    <ClickHandler>
+      <ContentContainer>
+        <ContentHeader>
+          <ContentSpan>
+            <PremiumIcon />
+            <span>Nội dung hot nhất</span>
+          </ContentSpan>
+          <RightVector />
+        </ContentHeader>
 
-      <Video content={content} />
-    </ContentContainer>
+        <Video content={content} />
+      </ContentContainer>
+    </ClickHandler>
   );
 };
 

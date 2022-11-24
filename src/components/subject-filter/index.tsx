@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { SubjectsType } from "../../data/dataA";
+import ClickHandler from "../click-handler";
 import SubjectItem from "../subject-item";
 import { SubjectContainer } from "./styles";
 
@@ -18,12 +19,23 @@ const SubjectFilter = ({ item, index }: FilterProps) => {
 
   return (
     <>
-      <SubjectContainer
-        onClick={handleClick}
-        backgroundColor={`${background[index % 5]}`}
-      >
-        <p>{item.subjectName}</p>
-      </SubjectContainer>
+      {item.subjectName === "Môn ngữ văn" ? (
+        <SubjectContainer
+          onClick={handleClick}
+          backgroundColor={`${background[index % 5]}`}
+        >
+          <p>{item.subjectName}</p>
+        </SubjectContainer>
+      ) : (
+        <ClickHandler>
+          <SubjectContainer
+            onClick={handleClick}
+            backgroundColor={`${background[index % 5]}`}
+          >
+            <p>{item.subjectName}</p>
+          </SubjectContainer>
+        </ClickHandler>
+      )}
       {isOpen &&
         item.subjectList &&
         item.subjectList.map((item, index) => (

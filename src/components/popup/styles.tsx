@@ -9,7 +9,6 @@ export const PopupContainer = styled.div`
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.3);
-  display: none;
 `;
 
 export const PopupModal = styled.div`
