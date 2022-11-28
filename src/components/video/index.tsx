@@ -1,19 +1,19 @@
-import { ContentType } from "../../data/dataB";
-import subjectImg from "../../assets/subject-img";
-import { VideoImg, VideoTagList, VideoTitle } from "./styles";
-import YouTube, { YouTubeProps } from "react-youtube";
-import ClickHandler from "../click-handler";
+import { ContentType } from '../../data/dataB';
+import subjectImg from '../../assets/subject-img';
+import { VideoImg, VideoTagList, VideoTitle } from './styles';
+import YouTube, { YouTubeProps } from 'react-youtube';
+import ClickHandler from '../click-handler';
 
 const Video = ({ content }: { content: ContentType }) => {
   const { title, videoId, tags, id, subtitle } = content;
 
-  const opts: YouTubeProps["opts"] = {
-    width: "330",
-    height: "180",
+  const opts: YouTubeProps['opts'] = {
+    width: '330',
+    height: '180',
   };
 
-  const style: YouTubeProps["style"] = {
-    textAlign: "center",
+  const style: YouTubeProps['style'] = {
+    textAlign: 'center',
   };
 
   return (

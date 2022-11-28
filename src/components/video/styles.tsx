@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const VideoTitle = styled.p`
   margin: 8px 0;

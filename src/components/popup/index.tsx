@@ -1,12 +1,12 @@
-import { useRecoilState } from "recoil";
-import { modalOpenState } from "../../states";
+import { useRecoilState } from 'recoil';
+import { modalOpenState } from '../../states';
 import {
   PopupButton,
   PopupContainer,
   PopupModal,
   PopupSubtitle,
   PopupTitle,
-} from "./styles";
+} from './styles';
 
 const Popup = () => {
   const [isOpen, setIsOpen] = useRecoilState(modalOpenState);

@@ -1,10 +1,10 @@
-import { useRecoilValue } from "recoil";
-import { GradeType } from "../../data/dataA";
-import { gradeOpenState } from "../../states";
-import ClickHandler from "../click-handler";
-import SubjectFilter from "../subject-filter";
-import ToggleVector from "../toggle-vector";
-import { ItemContainer } from "./styles";
+import { useRecoilValue } from 'recoil';
+import { GradeType } from '../../data/dataA';
+import { gradeOpenState } from '../../states';
+import ClickHandler from '../click-handler';
+import SubjectFilter from '../subject-filter';
+import ToggleVector from '../toggle-vector';
+import { ItemContainer } from './styles';
 
 type ItemProps = {
   item: GradeType;
@@ -17,7 +17,7 @@ const GradeItem = ({ item }: ItemProps) => {
     <>
       <ItemContainer>
         <p>{item.grade}</p>
-        {item.grade === "Lớp 12" ? (
+        {item.grade === 'Lớp 12' ? (
           <ToggleVector />
         ) : (
           <ClickHandler>

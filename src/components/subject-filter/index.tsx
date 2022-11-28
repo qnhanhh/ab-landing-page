@@ -6,12 +6,12 @@ import { SubjectContainer } from './styles';
 
 type FilterProps = {
   item: SubjectsType;
-  index: number
+  index: number;
 };
 const background = ['#F3F7FF', '#F3FFFB', '#FDF3FF', '#F3FCFF', '#FFF3F4'];
 
 const SubjectFilter = ({ item, index }: FilterProps) => {
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(false);
 
   const handleClick = () => {
     setOpen(!isOpen)
@@ -45,4 +45,4 @@ const SubjectFilter = ({ item, index }: FilterProps) => {
   )
 }
 
-export default SubjectFilter
+export default SubjectFilter;

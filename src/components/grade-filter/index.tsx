@@ -1,8 +1,8 @@
-import { gradeData } from "../../data/dataA";
-import GradeItem from "../grade-item";
-import { GradeContainer, GradeHeader } from "./styles";
+import { gradeData } from '../../data/dataA';
+import GradeItem from '../grade-item';
+import { GradeContainer, GradeHeader } from './styles';
 
-const GradeFilter = ({header}:{header:string}) => {
+const GradeFilter = ({ header }: { header: string }) => {
   return (
     <GradeContainer>
       <GradeHeader>{header}</GradeHeader>

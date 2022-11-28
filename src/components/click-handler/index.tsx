@@ -1,5 +1,5 @@
-import { useSetRecoilState } from "recoil";
-import { modalOpenState } from "../../states";
+import { useSetRecoilState } from 'recoil';
+import { modalOpenState } from '../../states';
 
 const ClickHandler = ({ children }: { children: JSX.Element }) => {
   const setModalOpen = useSetRecoilState(modalOpenState);

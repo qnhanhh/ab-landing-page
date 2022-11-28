@@ -3,9 +3,9 @@ import {
   BannerSubtitle,
   BannerText,
   BannerTitle,
-} from "./styles";
-import { BannerType } from "../../data/dataA";
-import images from "../../assets/banner-img";
+} from './styles';
+import { BannerType } from '../../data/dataA';
+import images from '../../assets/banner-img';
 
 const Banner = ({ data }: { data: BannerType }) => {
   return (

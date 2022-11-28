@@ -3,11 +3,11 @@ import {
   ContentContainer,
   ContentHeader,
   ContentSpan,
-} from "./styles";
-import { ReactComponent as RightVector } from "../../assets/right_vector.svg";
-import { ReactComponent as PremiumIcon } from "../../assets/premium.svg";
-import contentImg from "../../assets/content-body";
-import ClickHandler from "../click-handler";
+} from './styles';
+import { ReactComponent as RightVector } from '../../assets/right_vector.svg';
+import { ReactComponent as PremiumIcon } from '../../assets/premium.svg';
+import contentImg from '../../assets/content-body';
+import ClickHandler from '../click-handler';
 
 const HotContent = ({ content }: { content: string[] }) => {
   return (

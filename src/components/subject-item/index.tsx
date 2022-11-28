@@ -1,5 +1,5 @@
-import { ReactComponent as ItemIcon } from "../../assets/item_icon.svg";
-import { ItemContainer } from "./styles";
+import { ReactComponent as ItemIcon } from '../../assets/item_icon.svg';
+import { ItemContainer } from './styles';
 
 type ItemProps = {
   item: string;
