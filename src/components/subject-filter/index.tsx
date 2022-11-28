@@ -1,25 +1,25 @@
-import { useState } from "react";
-import { SubjectsType } from "../../data/dataA";
-import ClickHandler from "../click-handler";
-import SubjectItem from "../subject-item";
-import { SubjectContainer } from "./styles";
+import { useState } from 'react';
+import { SubjectsType } from '../../data/dataA';
+import ClickHandler from '../click-handler';
+import SubjectItem from '../subject-item';
+import { SubjectContainer } from './styles';
 
 type FilterProps = {
   item: SubjectsType;
-  index: number;
+  index: number
 };
-const background = ["#F3F7FF", "#F3FFFB", "#FDF3FF", "#F3FCFF", "#FFF3F4"];
+const background = ['#F3F7FF', '#F3FFFB', '#FDF3FF', '#F3FCFF', '#FFF3F4'];
 
 const SubjectFilter = ({ item, index }: FilterProps) => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false)
 
   const handleClick = () => {
-    setOpen(!isOpen);
-  };
+    setOpen(!isOpen)
+  }
 
   return (
     <>
-      {item.subjectName === "Môn ngữ văn" ? (
+      {item.subjectName === 'Môn ngữ văn' ? (
         <SubjectContainer
           onClick={handleClick}
           backgroundColor={`${background[index % 5]}`}
@@ -42,7 +42,7 @@ const SubjectFilter = ({ item, index }: FilterProps) => {
           <SubjectItem item={item} key={index} />
         ))}
     </>
-  );
-};
+  )
+}
 
-export default SubjectFilter;
+export default SubjectFilter
